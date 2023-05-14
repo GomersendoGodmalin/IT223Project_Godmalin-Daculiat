@@ -1,0 +1,317 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30;
+    padding: 0;
+    scroll-padding-top: 32px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+body{
+    color: black;
+}
+.main{
+    overflow-x: hidden;
+}
+section{
+    padding: 64px 48px;
+}
+.navcont{
+    max-width: 1370px;
+    width: 100%;
+    margin: auto;
+}
+header{
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100; /*para sa order list sa navbar daw kuno -google*/
+}
+.logo img{
+    width: 41px;
+}
+.navcont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+#menu{
+    font-size: 24px;
+    display: none;
+}
+.navbar{
+    display: flex;
+    column-gap: 45px;
+}
+.navbar a{
+    font-size: 16px;
+    font-weight: 500;
+    background: linear-gradient(black, white);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-color: text;
+}
+.navbar a:hover{
+    color: black;
+}
+.homecont{
+    min-height: 640px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 32px;
+}
+.home-text h1{
+    font-size: 52px;
+    margin-bottom: 16px;
+}
+.home-text p{
+    margin-bottom: 16px;
+}
+.btn{
+    display: inline-block;
+    align-items: center;
+    column-gap: 8px;
+    background-color: black;
+    color: white;
+    padding: 16px 24px ;
+    border-radius: 7px;
+}
+.btn .bx{
+    font-size: 23px;
+}
+.btn:hover{
+    background: hsl(0, 0%, 20%);/*hue, saturation, lightness -google*/
+}
+.heading{
+    text-align: center;
+    font-size: 52px;
+    background: linear-gradient(black, white);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-color: text;
+    margin-bottom: 32px;
+}
+.specscont{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+    align-items: center;
+}
+.specdetails{
+    display: grid;
+    row-gap: 23px;
+}
+.specdetails .box h3{
+    font-size: 16px;
+}
+.specdetails p{
+    margin-top: 8px;
+}
+.shopcont{
+    display: grid;
+    grid-template-columns: repeat(3, 164px);
+    justify-content: center;
+    gap: 48px;
+}
+.shopcont .box{
+    position: relative;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 5px 9px grey;
+    display: grid;
+}
+.shopcont .box .img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    object-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+}
+.shopcont .box h3{
+    font-size: 15px;
+}
+.shopcont .box span{
+    font-weight: 500;
+}
+.shopcont .box .bx{
+    position: absolute;
+    bottom: 14px;
+    right: 14px;
+    padding: 8px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    font-size: 17px;
+}
+.shopcont .box .bx:hover{
+    background: hsl(0, 0%, 20%);
+}
+.budscont{
+    display: grid;
+    grid-template-columns: 250px max-content;
+    justify-content: center;
+    align-items: center;
+    column-gap: 64px;
+    background: hsl(0, 0%, 13%);
+    color: white;
+    border: 8px;
+}
+.budsimg{
+    width: 300px;
+}
+.budstext h2{
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.budstext span{
+    font-weight: 400;
+}
+.budstext p{
+    margin: 16px 0 16px;
+}
+.budstext .btn:hover{
+    background: hsl(0, 0%, 20%);
+}
+.footercont{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, auto));
+    gap: 16px;
+}
+.footerbox{
+    display: flex;
+    flex-direction: column;
+}
+.footerbox h2{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.footerbox a{
+    color: black;
+    margin-bottom: 4px;
+}
+.social{
+    display: flex;
+    column-gap: 16px;
+}
+.social .bx{
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+.social .bx:hover{
+    background: hsl(0, 0%, 50%);
+}
+.copyright{
+    text-align: center;
+    padding: 20px;
+}
+@media (max-width: 1080px){
+    .navcont{
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+@media (max-width: 1080px){
+    section{
+        padding: 50px 0;
+    }
+    .home-text h1{
+        font-size: 48px;
+    }
+}
+@media (max-width: 768px){
+    .logo{
+        width: 30%;
+    }
+    #menu{
+        display: initial;
+        z-index: 150;
+    }
+    .navbar{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        clip-path: circle(0% at 50%);
+        transition: 0.5s;
+    }
+    .navbar a{
+        display: block;
+        padding: 12px;
+    }
+    .navbar.active{
+        clip-path: circle(144% at 50% 0);
+    }
+    .home-text h1{
+        font-size: 32px;
+    }
+    p{
+        font-size: 14px;
+    }
+    .btn{
+        padding: 15px 16px;
+    }
+    .heading{
+        font-size: 38.4px;
+    }
+}
+@media (max-width: 648px){
+    .homecont,
+    .specscont,
+    .budscont{
+        grid-template-columns: 1fr;
+    }
+    .budstext{
+        padding: 23px;
+    }
+    .homecont{
+        min-height: 540px;
+    }
+    .specsimg{
+        padding-top: 32px;
+    }
+    .shopcont{
+        grid-template-columns: repeat(2, 164px);
+        gap: 16px;
+    }
+}
+@media (max-width: 360px){
+    .navcont{
+        padding: 4px;
+    }
+    .home-text h1{
+        font-size: 16px;
+    }
+    .heading{
+        font-size: 32px;
+    }
+    .shopcont{
+        grid-template-columns: repeat(2, 144px);
+    }
+}
+@media (max-width: 300px){
+    .shopcont{
+        grid-template-columns: repeat(1, 144px);
+    }
+    .budstext{
+        padding: 70px;
+    }
+}
