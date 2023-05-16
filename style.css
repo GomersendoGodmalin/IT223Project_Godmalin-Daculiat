@@ -1,29 +1,23 @@
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     margin: 30;
     padding: 0;
-    scroll-padding-top: 32px;
     box-sizing: border-box;
     scroll-behavior: smooth;
     list-style: none;
     text-decoration: none;
 }
-img{
-    width: 100%;
-}
 body{
     color: black;
 }
-.main{
-    overflow-x: hidden;
+img{
+    width: 100%;
 }
 section{
     padding: 64px 48px;
 }
-.navcont{
-    max-width: 1370px;
-    width: 100%;
-    margin: auto;
+.main{
+    overflow-x: hidden;
 }
 header{
     display: block;
@@ -31,16 +25,19 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 100; /*para sa order list sa navbar daw kuno -google*/
+    z-index: 100;
 }
 .logo img{
     width: 41px;
 }
-.navcont{
+.nav-container{
+    max-width: 1370px;
+    width: 100%;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0;
+    padding: 10px;
 }
 #menu{
     font-size: 24px;
@@ -51,139 +48,128 @@ header{
     column-gap: 45px;
 }
 .navbar a{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
-    background: linear-gradient(black, white);
-    color: transparent;
-    -webkit-background-clip: text;
-    background-color: text;
-}
-.navbar a:hover{
     color: black;
 }
-.homecont{
+.navbar a:hover{
+    box-shadow: 0 5px 5px grey;
+}
+.home-container{
+    margin-top: 50px;
     min-height: 640px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    grid-template-columns: repeat(2, 1fr);
     gap: 32px;
 }
+.home img{
+    width: 100%;
+    height: 100%;
+}
 .home-text h1{
-    font-size: 52px;
-    margin-bottom: 16px;
+    font-size: 50px;
+    margin-bottom: 20px;
 }
 .home-text p{
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 .btn{
     display: inline-block;
     align-items: center;
-    column-gap: 8px;
-    background-color: black;
+    column-gap: 10px;
     color: white;
-    padding: 16px 24px ;
-    border-radius: 7px;
-}
-.btn .bx{
-    font-size: 23px;
+    background-color: grey;
+    padding: 15px 20px;
+    border-radius: 10px;
 }
 .btn:hover{
-    background: hsl(0, 0%, 20%);/*hue, saturation, lightness -google*/
+    background: hsl(0, 0%, 30%);
 }
-.heading{
+.specs h1{
     text-align: center;
-    font-size: 52px;
-    background: linear-gradient(black, white);
-    color: transparent;
-    -webkit-background-clip: text;
-    background-color: text;
+    font-size: 40px;
+}
+.shop h2{
+    text-align: center;
+    font-size: 40px;
     margin-bottom: 32px;
 }
-.specscont{
+.specs-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 16px;
+    grid-gap: 20px;
     align-items: center;
 }
-.specdetails{
+.specs-details{
     display: grid;
-    row-gap: 23px;
+    row-gap: 20px;
 }
-.specdetails .box h3{
+.specs-details .box h3{
     font-size: 16px;
+    margin-bottom: 10px;
 }
-.specdetails p{
-    margin-top: 8px;
-}
-.shopcont{
+.shop-container{
     display: grid;
     grid-template-columns: repeat(3, 164px);
     justify-content: center;
-    gap: 48px;
+    gap: 50px;
 }
-.shopcont .box{
+.shop-container .box{
     position: relative;
     padding: 10px;
     background-color: white;
     box-shadow: 0 5px 9px grey;
     display: grid;
+    font-weight: 500;
 }
-.shopcont .box .img{
+.shop-container .box img{
     width: 100px;
     height: 100px;
     object-fit: contain;
     object-position: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 16px;
+    margin: auto;
+    margin-bottom: 20px;
 }
-.shopcont .box h3{
-    font-size: 15px;
-}
-.shopcont .box span{
-    font-weight: 500;
-}
-.shopcont .box .bx{
+.shop-container .box .bx{
     position: absolute;
     bottom: 14px;
     right: 14px;
-    padding: 8px;
     background-color: black;
+    padding: 5px;
     color: white;
-    border-radius: 8px;
-    font-size: 17px;
+    border-radius: 5px;
+    font-size: 15px;
 }
-.shopcont .box .bx:hover{
-    background: hsl(0, 0%, 20%);
+.shop-container .box .bx:hover{
+    background: hsl(0, 0%, 50%);
 }
-.budscont{
+.buds-container{
     display: grid;
-    grid-template-columns: 250px max-content;
+    grid-template-columns: 200px max-content;
     justify-content: center;
     align-items: center;
     column-gap: 64px;
-    background: hsl(0, 0%, 13%);
+    background: hsl(0, 0%, 20%);
     color: white;
-    border: 8px;
+    border: 5px;
 }
-.budsimg{
+.buds-img{
     width: 300px;
 }
-.budstext h2{
-    font-size: 23px;
+.buds-text h2{
+    font-size: 25px;
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
-.budstext span{
+.buds-text span{
     font-weight: 400;
 }
-.budstext p{
-    margin: 16px 0 16px;
+.buds-text p{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-.budstext .btn:hover{
-    background: hsl(0, 0%, 20%);
-}
-.footercont{
+.footer-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(170px, auto));
     gap: 16px;
@@ -193,35 +179,28 @@ header{
     flex-direction: column;
 }
 .footerbox h2{
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
 }
 .footerbox a{
     color: black;
-    margin-bottom: 4px;
 }
 .social{
     display: flex;
-    column-gap: 16px;
-}
-.social .bx{
-    background-color: white;
-    color: black;
-    padding: 10px;
-    border-radius: 8px;
-    font-size: 16px;
+    column-gap: 20px;
+    margin-bottom: 10px;
 }
 .social .bx:hover{
     background: hsl(0, 0%, 50%);
 }
 .copyright{
     text-align: center;
-    padding: 20px;
+    padding: 25px;
 }
 @media (max-width: 1080px){
-    .navcont{
-        margin: 0 auto;
+    .nav-container{
+        margin: auto;
         width: 90%;
     }
 }
@@ -230,7 +209,7 @@ header{
         padding: 50px 0;
     }
     .home-text h1{
-        font-size: 48px;
+        font-size: 45px;
     }
 }
 @media (max-width: 768px){
@@ -270,48 +249,46 @@ header{
         padding: 15px 16px;
     }
     .heading{
-        font-size: 38.4px;
+        font-size: 38px;
     }
 }
 @media (max-width: 648px){
-    .homecont,
-    .specscont,
-    .budscont{
+    .home-container,
+    .specs-container,
+    .buds-container{
         grid-template-columns: 1fr;
     }
-    .budstext{
-        padding: 23px;
+    .buds-text{
+        padding: 20px;
     }
-    .homecont{
+    .home-container{
         min-height: 540px;
     }
-    .specsimg{
-        padding-top: 32px;
-    }
-    .shopcont{
+    .shop-container{
         grid-template-columns: repeat(2, 164px);
         gap: 16px;
     }
 }
 @media (max-width: 360px){
-    .navcont{
+    .nav-container{
         padding: 4px;
     }
     .home-text h1{
-        font-size: 16px;
+        font-size: 20px;
+        font-weight: bold;
     }
     .heading{
-        font-size: 32px;
+        font-size: 30px;
     }
-    .shopcont{
+    .shop-container{
         grid-template-columns: repeat(2, 144px);
     }
 }
 @media (max-width: 300px){
-    .shopcont{
+    .shop-container{
         grid-template-columns: repeat(1, 144px);
     }
-    .budstext{
+    .buds-text{
         padding: 70px;
     }
 }

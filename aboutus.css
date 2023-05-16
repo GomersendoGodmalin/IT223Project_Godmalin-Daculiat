@@ -1,29 +1,20 @@
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     margin: 30;
     padding: 0;
-    scroll-padding-top: 32px;
     box-sizing: border-box;
     scroll-behavior: smooth;
     list-style: none;
     text-decoration: none;
 }
-img{
-    width: 100%;
-}
 body{
     color: black;
 }
-.main{
-    overflow-x: hidden;
+img{
+    width: 100%;
 }
 section{
     padding: 64px 48px;
-}
-.navcont{
-    max-width: 1370px;
-    width: 100%;
-    margin: auto;
 }
 header{
     display: block;
@@ -31,49 +22,46 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 100; /*para sa order list sa navbar daw kuno -google*/
+    z-index: 100;
 }
 .logo img{
     width: 41px;
 }
-.navcont{
+.nav-container{
+    max-width: 1370px;
+    width: 100%;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0;
-}
-#menu{
-    font-size: 24px;
-    display: none;
+    padding: 10px;
 }
 .navbar{
     display: flex;
     column-gap: 45px;
 }
 .navbar a{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
-    background: linear-gradient(black, white);
-    color: transparent;
-    -webkit-background-clip: text;
-    background-color: text;
-}
-.navbar a:hover{
     color: black;
 }
-.homecont{
+.navbar a:hover{
+    box-shadow: 0 5px 5px grey;
+}
+.home-container{
+    margin-top: 50px;
     min-height: 640px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    grid-template-columns: repeat(2, 1fr);
     gap: 32px;
 }
 @media (max-width: 648px){
-    .homecont{
+    .home-container{
         grid-template-columns: 1fr;
         min-height: 540px;
     }
-    .homeimg{
+    .home-img{
         padding-top: 32px;
     }
 }
