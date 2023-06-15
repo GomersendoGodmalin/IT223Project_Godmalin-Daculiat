@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phead</title>
+    <title>Home</title>
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
     <div class="main">
@@ -21,22 +23,24 @@
                     <li><a href="services.html">Services</a></li>
                     <li><a href="blogs.html">Blogs</a></li>
                     <li><a href="aboutus.html">About us</a></li>
-                    <li><a href="#footerbox">Contact us</a></li>
-                </ul>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a > <i class='bx bx-cart' id="cart-icon"></i></a></li> 
             </div>
         </header>
         <section class="home">
-            <div class="home-container">
+            <div class="home-container" >
                 <div class="home-img">
-                    <img src="img/home1.jpg" alt="">
+                    <img src="img/home1.jpg" alt="" class="product-img">
                 </div>
-                <div class="home-text">
-                    <h1>Phead Solo 3</h1>
+                <div class="home-text" >
+                    <h1 class="product-title">Phead Solo 3</h1>
+                    <!--<span class="price">$80</span>-->
                     <p>Phead Solo 3 wireless over-ear headphones delivers premium sound while blocking external noise with Active Noise Canccelling. Beats Solo3 Wireless headphones are ready to go when you are. They instantly set up—just power on and hold near your iPhone—then simultaneously connect to your Apple Watch, iPad, and Mac.</p>
-                    <a href="#" class="btn">
-                        <i class='bx bx-shopping-bag' ></i>
-                        <span>Add To Bag</span>
-                    </a>
+                    <div class="btn" data-name="p-10">
+                        <i class='bx bx-shopping-bag add-cart' ></i>
+                        <span>Add to bag</span>
+                    </div>
+                   
                 </div>
             </div>
         </section>
@@ -60,71 +64,307 @@
                 </div>
             </div>
         </section>
-        <section class="shop">
+        <section class="shop" id="shop">
             <h2>Shop Now</h2>
             <div class="shop-container">
-                <div class="box">
-                    <img src="img/shop1.png" alt="">
-                    <h3>Phead Solo</h3>
-                    <span>$100</span>
-                    <i class='bx bx-shopping-bag' ></i>
+                <div class="box" data-name="p-1">
+                    <img src="img/shop1.png" data-name="p-1"  class="product-img">
+                    <h3 class="product-title">Phead Solo</h3>
+                    <span class="price">$20</span>
+                    <i class='bx bx-shopping-bag add-cart' ></i>
                 </div>
-                <div class="box">
-                    <img src="img/shop2.png" alt="">
-                    <h3>Phead Solo</h3>
-                    <span>$150</span>
-                    <i class='bx bx-shopping-bag' ></i>
+                <div class="box" data-name="p-2" >
+                    <img src="img/shop2.png" data-name="p-2" class="product-img">
+                    <h3 class="product-title">Phead Gold Solo</h3>
+                    <span class="price">$30</span>
+                    <i class='bx bx-shopping-bag add-cart' ></i>
                 </div>
-                <div class="box">
-                    <img src="img/shop3.png" alt="">
-                    <h3>Phead Solo</h3>
-                    <span>$200</span>
-                    <i class='bx bx-shopping-bag' ></i>
+                <div class="box" data-name="p-3" >
+                    <img src="img/shop3.png" data-name="p-3" class="product-img">
+                    <h3 class="product-title">Phead Gaming Solo</h3>
+                    <span class="price">$40</span>
+                    <i class='bx bx-shopping-bag add-cart' ></i>
                 </div>
-                <div class="box">
-                    <img src="img/shop4.png" alt="">
-                    <h3>Phead Solo</h3>
-                    <span>$250</span>
-                    <i class='bx bx-shopping-bag' ></i>
+                <div class="box" data-name="p-4" >
+                    <img src="img/shop4.png" data-name="p-4" class="product-img">
+                    <h3 class="product-title">Phead White Solo</h3>
+                    <span class="price">$50</span>
+                    <i class='bx bx-shopping-bag add-cart' ></i>
                 </div>
-                <div class="box">
-                    <img src="img/shop5.png" alt="">
-                    <h3>Phead Solo</h3>
-                    <span>$300</span>
-                    <i class='bx bx-shopping-bag' ></i>
+                <div class="box" data-name="p-5" >
+                    <img src="img/shop5.png" data-name="p-5" class="product-img">
+                    <h3 class="product-title">Phead Black Solo</h3>
+                    <span class="price">$50</span>
+                    <i class='bx bx-shopping-bag add-cart' ></i>
+                </div>
+                <div class="box" data-name="p-6" >
+                    <img src="img/airpods.png" data-name="p-6" class="product-img">
+                    <h3 class="product-title">Airpods Solo</h3>
+                    <span class="price">$50</span>
+                    <i class='bx bx-shopping-bag add-cart' ></i>
+                </div>
+                <div class="box" data-name="p-7" >
+                    <img src="img/earphone.png" data-name="p-7" class="product-img">
+                    <h3 class="product-title">Earphone Solo</h3>
+                    <span class="price">$70</span>
+                    <i class='bx bx-shopping-bag add-cart' ></i>
+                </div>
+                <div class="box" data-name="p-8" >
+                    <img src="img/head.png" data-name="p-8" class="product-img">
+                    <h3 class="product-title">Phead Duo</h3>
+                    <span class="price">$80</span>
+                    <i class='bx bx-shopping-bag add-cart' ></i>
+                </div>
+                <div class="box" data-name="p-9" >
+                    <img src="img/buds.png" data-name="p-9" class="product-img">
+                    <h3 class="product-title">Buds Solo</h3>
+                    <span class="price">$90</span>
+                    <i class='bx bx-shopping-bag add-cart' ></i>
                 </div>
             </div>
         </section>
+        <div class="products-preview">
+            <div class="preview" data-target="p-1">
+               <i class="fas fa-times"></i>
+               <img src="img/shop1.png" alt="">
+               <h3>Phead Solo</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span>( 250 )</span>
+               </div>
+               <p>Phead Solo wireless over-ear headphones delivers premium sound while blocking external noise with Active Noise Canccelling.</p>
+               <div class="price">$20.00</div>
+               <div class="buttons">
+                <a class="buy">Buy now</a>
+                <a class="cart">Add to bag</a>
+               </div>
+            </div>
+            <div class="preview" data-target="p-2">
+                <i class="fas fa-times"></i>
+                <img src="img/shop2.png" alt="">
+                <h3>Phead Solo Gold</h3>
+                <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                   <span>( 250 )</span>
+                </div>
+                <p>Phead Solo Gold wireless over-ear headphones delivers premium sound while blocking external noise with Active Noise Canccelling..</p>
+                <div class="price">$30.00</div>
+                <div class="buttons">
+                    <a class="buy">Buy now</a>
+                    <a class="cart">Add to bag</a>
+                </div>
+             </div>
+             <div class="preview" data-target="p-3">
+                <i class="fas fa-times"></i>
+                <img src="img/shop3.png" alt="">
+                <h3>Phead Gaming Solo </h3>
+                <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                   <span>( 250 )</span>
+                </div>
+                <p>Phead Gaming Solo wireless over-ear headphones delivers premium sound while blocking external noise with Active Noise Canccelling.</p>
+                <div class="price">$40.00</div>
+                <div class="buttons">
+                    <a class="buy">Buy now</a>
+                    <a class="cart">Add to bag</a>
+                </div>
+             </div>
+             <div class="preview" data-target="p-4">
+                <i class="fas fa-times"></i>
+                <img src="img/shop4.png" alt="">
+                <h3>Phead White Solo </h3>
+                <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                   <span>( 250 )</span>
+                </div>
+                <p>Phead White Solo wireless over-ear headphones delivers premium sound while blocking external noise with Active Noise Canccelling.</p>
+                <div class="price">$50.00</div>
+                <div class="buttons">
+                    <a class="buy">Buy now</a>
+                    <a class="cart">Add to bag</a>
+                </div>
+             </div>
+             <div class="preview" data-target="p-5">
+                <i class="fas fa-times"></i>
+                <img src="img/shop5.png" alt="">
+                <h3>Phead Black Solo </h3>
+                <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                   <span>( 250 )</span>
+                </div>
+                <p>Phead Black Solo wireless over-ear headphones delivers premium sound while blocking external noise with Active Noise Canccelling.</p>
+                <div class="price">$50.00</div>
+                <div class="buttons">
+                    <a class="buy">Buy now</a>
+                    <a class="cart">Add to bag</a>
+                </div>
+             </div>
+             <div class="preview" data-target="p-6">
+                <i class="fas fa-times"></i>
+                <img src="img/airpods.png" alt="">
+                <h3>Airpods Solo </h3>
+                <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                   <span>( 250 )</span>
+                </div>
+                <p>Airpods Solo wireless over-ear headphones delivers premium sound while blocking external noise with Active Noise Canccelling.</p>
+                <div class="price">$50.00</div>
+                <div class="buttons">
+                    <a class="buy">Buy now</a>
+                    <a class="cart">Add to bag</a>
+                </div>
+             </div>
+             <div class="preview" data-target="p-7">
+                <i class="fas fa-times"></i>
+                <img src="img/earphone.png" alt="">
+                <h3>Earphone Solo </h3>
+                <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                   <span>( 250 )</span>
+                </div>
+                <p>Earphone Solo wired over-ear headphones delivers premium sound while blocking external noise with Active Noise Canccelling.</p>
+                <div class="price">$70.00</div>
+                <div class="buttons">
+                    <a class="buy">Buy now</a>
+                    <a class="cart">Add to bag</a>
+                </div>
+             </div>
+             <div class="preview" data-target="p-8">
+                <i class="fas fa-times"></i>
+                <img src="img/head.png" alt="">
+                <h3>Phead Duo </h3>
+                <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                   <span>( 250 )</span>
+                </div>
+                <p>Phead Duo wireless over-ear headphones delivers premium sound while blocking external noise with Active Noise Canccelling.</p>
+                <div class="price">$80.00</div>
+                <div class="buttons">
+                    <a class="buy">Buy now</a>
+                    <a class="cart">Add to bag</a>
+                </div>
+             </div>
+             <div class="preview" data-target="p-9">
+                <i class="fas fa-times"></i>
+                <img src="img/buds.png" alt="">
+                <h3>Buds Solo </h3>
+                <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                   <span>( 250 )</span>
+                </div>
+                <p>Buds Solo wireless buds delivers premium sound while blocking external noise with Active Noise Canccelling. </p>
+                <div class="price">$90.00</div>
+                <div class="buttons">
+                    <a class="buy">Buy now</a>
+                    <a class="cart">Add to bag</a>
+                </div>
+             </div>
+             <div class="preview" data-target="p-10">
+                <i class="fas fa-times"></i>
+                <img src="img/home1.jpg" alt="">
+                <h3>Phead Solo 3 </h3>
+                <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                   <span>( 250 )</span>
+                </div>
+                <p>Phead Solo 3 wireless over-ear headphones delivers premium sound while blocking external noise with Active Noise Canccelling. </p>
+                <div class="price">$80.00</div>
+                <div class="buttons">
+                    <a class="buy">Buy now</a>
+                    <a class="cart">Add to bag</a>
+                </div>
+             </div>
+             <div class="preview" data-target="p-11">
+                <i class="fas fa-times"></i>
+                <img src="img/buds.png" alt="">
+                <h3>Phead Solo 3 </h3>
+                <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                   <span>( 250 )</span>
+                </div>
+                <p>Phead Studio Buds wireless over-ear headphones delivers premium sound while blocking external noise with Active Noise Canccelling. </p>
+                <div class="price">$80.00</div>
+                <div class="buttons">
+                   <a class="buy">Buy now</a>
+                   <a class="cart">Add to bag</a>
+                </div>
+             </div>
+        </div>
         <section class="buds">
             <div class="buds-container">
                 <div class="buds-text">
-                    <h2>Phead Studio Buds</h2>
-                    <span>$100</span>
+                    <h2 class="product-title">Phead Studio Buds</h2>
+                    <!--<span class="price">$100</span>-->
                     <p>One-touch pairing for Apple and Android</p>
-                    <a href="#" class="btn">
-                        <i class='bx bx-shopping-bag' ></i>
-                        <span>Buy Now</span>
-                    </a>
+                    <div class="btn" data-name="p-11">
+                        <i class='bx bx-shopping-bag add-cart' ></i>
+                        <span>Buy now</span>
+                    </div>
                 </div>
                 <div class="buds-img">
-                    <img src="img/buds.png" alt="">
+                    <img src="img/buds.png" alt="" class="product-img">
                 </div>
             </div>
+           
         </section>
         <section class="footer-container">
             <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
             <div class="footerbox">
                 <h2>Products</h2>
-                <a href="#">Headphones</a>
-                <a href="#">Earbuds</a>
-                <a href="#">Earphone</a>
+                <a href="#shop">Headphones</a>
+                <a href="#shop">Earbuds</a>
+                <a href="#shop">Earphone</a>
             </div>
             <div class="footerbox" id="footerbox">
-                <h2>Payments</h2>
-                <a href="#">Return Policy</a>
-                <a href="#">Refunds Policy</a>
-                <a href="#">Support</a>
-                <a href="#">Terms of Use</a>
+                <h2>Services</h2>
+                <a href="services.html">Delivery</a>
+                <a href="services.html">Refund</a>
+                <a href="services.html">Support</a>
+                <a href="services.html">Contact Support</a>
             </div>
             <div class="footerbox">
                 <h2>Contact us</h2>
@@ -133,7 +373,7 @@
                     <i class='bx bxl-twitter' ></i>
                     <i class='bx bxl-instagram-alt' ></i>
                 </div>
-                <a href="#">(02) 8878-7600</a>
+                <a href="contact.html">(02) 8878-7600</a>
             </div>
         </section>
         <div class="copyright">

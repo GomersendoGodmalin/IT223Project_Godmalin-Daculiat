@@ -36,6 +36,10 @@ header{
     justify-content: space-between;
     padding: 10px;
 }
+#menu{
+    font-size: 24px;
+    display: none;
+}
 .navbar{
     display: flex;
     column-gap: 45px;
@@ -48,6 +52,9 @@ header{
 .navbar a:hover{
     box-shadow: 0 5px 5px grey;
 }
+.navbar i:hover{
+    box-shadow: 0 5px 5px grey;
+}
 .heading{
     width: 90%;
     display: flex;
@@ -58,17 +65,18 @@ header{
     margin: 20px auto;
 }
 .heading h1{
-    font-size: 50px;
-    margin-bottom: 25px;
+    text-align: center;
+    padding-top: 100px;
+    font-weight: 600;
     position: relative;
+    display: grid;
 }
 .heading p{
     font-size: 18px;
-    margin-bottom: 10px;
 }
 .container{
-    width: 90%;
-    padding: 10px 20px;
+    width: 100%;
+    padding: 10px 10px;
 }
 .about{
     display: flex;
@@ -88,10 +96,11 @@ header{
     transition: 0.5s ease;
 }
 .about-img:hover img{
-    transform: scale(1.2);
+    transform: scale(1.02);
 }
 .about-content{
     flex: 1;
+    margin-bottom: 50px;
 }
 .about-content h2{
     font-size: 23px;
@@ -113,6 +122,87 @@ header{
 }
 .about-content .read-more:hover{
     background-color: grey;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, auto));
+    gap: 16px;
+    border-top: 1px solid black;
+    margin-top: 200px;
+}
+.footerbox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
+    margin-right: auto;
+}
+.footerbox h2{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.footerbox a{
+    color: black;
+}
+.footerbox a:hover{
+    box-shadow: 0 5px 5px grey;
+}
+.social{
+    display: flex;
+    column-gap: 20px;
+    margin-bottom: 10px;
+}
+.social .bx:hover{
+    background: hsl(0, 0%, 50%);
+}
+.copyright{
+    text-align: center;
+    padding: 25px;
+}
+@media (max-width: 1080px){
+    .nav-container{
+        margin: auto;
+        width: 90%;
+    }
+}
+@media (max-width: 1080px){
+    section{
+        padding: 50px 0;
+    }
+    .home-text h1{
+        font-size: 45px;
+    }
+}
+@media (max-width: 846px){
+    .logo{
+        width: 30%;
+    }
+    #menu{
+        display: initial;
+        z-index: 150;
+    }
+    .navbar{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        clip-path: circle(0% at 50%);
+        transition: 0.5s;
+    }
+    .navbar a{
+        display: block;
+        padding: 12px;
+    }
+    .navbar.active{
+        clip-path: circle(144% at 50% 0);
+    }
+    p{
+        font-size: 14px;
+    }
 }
 @media (max-width: 648px){
     .home-container{
